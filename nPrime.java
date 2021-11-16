@@ -1,5 +1,3 @@
-package Other;
-
 public class nPrime {
 
     /**
@@ -46,6 +44,5 @@ public class nPrime {
             System.out.println(i);
         }
     }
-
 
 }
