@@ -1,0 +1,14 @@
+public static boolean makeBricks(int small, int big, int goal) { //1, 4, 11
+
+/*
+Do the number of large bricks exceed the goal?
+If so, check if the value of all small bricks and large bricks add up to a number greater than or equal to the goal.
+If not, take advantage of whole number int divison, and check if the goal divided by 5 (which returns a whole number, not a decimal) plus the 
+small bricks, is greater than or equal to the goal.
+*/
+
+        return (big * 5 < goal) ? 
+                (big * 5 + small >= goal) : 
+                ( ( (goal / 5) * 5) + small >= goal);
+
+    }
