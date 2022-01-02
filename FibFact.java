@@ -5,13 +5,7 @@ import java.util.Scanner;
 
 public class FibFact {
 
-    public static int factorial(int n) {
-        if (n <= 1) return 1;
-
-        return n * factorial(n - 1);
-    }
-
-    public static int fibonacci(int n) {
+   public static int fibonacci(int n) {
         double sqOf5 = Math.sqrt(5);
 
         double phi = (1 + sqOf5) / 2; //1.61803...
@@ -36,10 +30,6 @@ public class FibFact {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter a number and receive a factorial of that number:");
-        int factorial = factorial(sc.nextInt());
-        System.out.println(factorial);
 
         System.out.println("\nEnter a range and receive the Fibonacci numbers in that range.\nMinimum:");
         int min = sc.nextInt();
